@@ -16,7 +16,8 @@ The projects are generated using various topologies, listed [here](https://githu
 You can generate more by running:
 
 ```
-bazel run :android_studio_poet -- $(pwd)/example_config.json
+java -jar third_party/android-studio-poet-all-1.0-SNAPSHOT-BAZEL-EXTENSIONS.jar
+example_config.json
 ```
 
 where [example_config.json](example_config.json) contains your desired project setup.
