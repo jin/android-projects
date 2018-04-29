@@ -49,6 +49,16 @@ For all projects:
 
 ![](linear/bazel_graph.png)
 
+## [star](/star)
+
+### Gradle graph
+
+![](star/gradle_graph.png)
+
+### Bazel graph
+
+![](star/bazel_graph.png)
+
 ## [topology_connected](/topology_connected)
 
 ### Gradle graph
