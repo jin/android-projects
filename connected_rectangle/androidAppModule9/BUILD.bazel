@@ -6,8 +6,9 @@ android_library(
     custom_package = "com.androidAppModule9",
     visibility = ["//visibility:public"], 
     deps = [
-        "//module0",
-        "//module1"
+        "//androidAppModule12",
+        "//androidAppModule13",
+        "//androidAppModule14"
     ],
 )
         

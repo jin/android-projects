@@ -3,7 +3,8 @@ package androidAppModule6packageJava0;
 public class Foo0 {
   public void foo0() {
     final Runnable anything = () -> System.out.println("anything");
-    new androidAppModule8packageJava0.Foo4().foo3();
+    new androidAppModule10packageJava0.Foo4().foo3();
+    new androidAppModule11packageJava0.Foo4().foo3();
     new androidAppModule9packageJava0.Foo4().foo3();
   }
 

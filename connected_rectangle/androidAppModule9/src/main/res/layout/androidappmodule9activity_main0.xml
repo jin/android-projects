@@ -20,6 +20,21 @@
         
 />
             
+            <include
+        layout="@layout/androidappmodule14activity_main9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+/>
+            <include
+        layout="@layout/androidappmodule13activity_main9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+/>
+            <include
+        layout="@layout/androidappmodule12activity_main9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+/>
             
         </LinearLayout>
     </ScrollView>

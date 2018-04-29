@@ -30,7 +30,12 @@
 /><TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/androidAppModule8string11"
+        android:text="@string/androidAppModule11string11"
+        
+/><TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/androidAppModule10string11"
         
 />
             <ImageView
@@ -78,7 +83,13 @@
             <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/androidappmodule8image14"
+        android:src="@drawable/androidappmodule11image14"
+        
+/>
+            <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/androidappmodule10image14"
         
 />
             

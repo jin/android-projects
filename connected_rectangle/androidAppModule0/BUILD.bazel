@@ -6,8 +6,9 @@ android_binary(
     custom_package = "com.androidAppModule0",
     visibility = ["//visibility:public"], 
     deps = [
-        "//androidAppModule2",
-        "//androidAppModule3"
+        "//androidAppModule3",
+        "//androidAppModule4",
+        "//androidAppModule5"
     ],
 )
         

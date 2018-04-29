@@ -4,6 +4,7 @@ public class Foo0 {
   public void foo0() {
     final Runnable anything = () -> System.out.println("anything");
     new module4packageJava0.Foo4().foo3();
+    new module5packageJava0.Foo4().foo3();
   }
 
   public void foo1() {

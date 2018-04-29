@@ -21,6 +21,11 @@
 />
             
             <include
+        layout="@layout/androidappmodule8activity_main9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+/>
+            <include
         layout="@layout/androidappmodule7activity_main9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

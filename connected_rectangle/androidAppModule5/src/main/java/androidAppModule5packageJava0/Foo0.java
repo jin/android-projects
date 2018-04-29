@@ -5,6 +5,7 @@ public class Foo0 {
     final Runnable anything = () -> System.out.println("anything");
     new androidAppModule6packageJava0.Foo4().foo3();
     new androidAppModule7packageJava0.Foo4().foo3();
+    new androidAppModule8packageJava0.Foo4().foo3();
   }
 
   public void foo1() {

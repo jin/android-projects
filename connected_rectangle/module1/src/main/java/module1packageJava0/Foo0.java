@@ -3,8 +3,8 @@ package module1packageJava0;
 public class Foo0 {
   public void foo0() {
     final Runnable anything = () -> System.out.println("anything");
-    new module2packageJava0.Foo4().foo3();
-    new module3packageJava0.Foo4().foo3();
+    new module5packageJava0.Foo4().foo3();
+    new module4packageJava0.Foo4().foo3();
   }
 
   public void foo1() {
