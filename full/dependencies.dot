@@ -10,7 +10,7 @@ digraph full {
   androidAppModule8 -> androidAppModule9, module0, module1, module2, module3, module4;
   androidAppModule9 -> module0, module1, module2, module3, module4;
   module0 -> module1, module2, module3, module4;
-  module1 -> module0, module2, module3, module4;
+  module1 -> module2, module3, module4;
   module2 -> module3, module4;
   module3 -> module4;
   module4;
