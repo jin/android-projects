@@ -1,4 +1,15 @@
-### simple_tree
+# android_projects
+
+A selection of generated Android projects buildable with Gradle and Bazel.
+
+This project is used for A/B testing build optimizations with the build systems.
+
+For all projects:
+
+- `bazel build //androidAppModule0`
+- `gradle assembleDebug`
+
+### [simple_tree](/simple_tree)
 
 #### Gradle graph
 
@@ -8,7 +19,7 @@
 
 ![](simple_tree/bazel_graph.png)
 
-### variable_tree
+### [variable_tree](/variable_tree)
 
 #### Gradle graph
 
@@ -18,7 +29,7 @@
 
 ![](variable_tree/bazel_graph.png)
 
-### topology_connected
+### [topology_connected](/topology_connected)
 
 #### Gradle graph
 
