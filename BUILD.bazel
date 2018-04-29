@@ -1,13 +1,4 @@
-repositories = [
-    "connected",
-    "connected_rectangle",
-    "full",
-    "linear",
-    "rectangle",
-    "simple_tree",
-    "star",
-    "variable_tree",
-]
+load("//:repositories.bzl", "repositories")
 
 filegroup(
     name = "all_android_binaries",
