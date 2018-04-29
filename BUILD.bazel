@@ -1,0 +1,15 @@
+repositories = [
+    "connected",
+    "connected_rectangle",
+    "full",
+    "linear",
+    "rectangle",
+    "simple_tree",
+    "star",
+    "variable_tree",
+]
+
+filegroup(
+    name = "all_android_binaries",
+    srcs = ["@%s//androidAppModule0" % repository for repository in repositories]
+)
