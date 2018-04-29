@@ -90,17 +90,3 @@ The projects are generated using various topologies, listed [here](https://githu
 ### Bazel graph
 
 ![](connected_rectangle/bazel_graph.png)
-
-# Others
-
-These are the larger versions of the topologies.
-
-## [topology_connected](/topology_connected)
-
-### Gradle graph
-
-![](topology_connected/gradle_graph.png)
-
-### Bazel graph
-
-![](topology_connected/bazel_graph.png)
