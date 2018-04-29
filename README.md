@@ -19,7 +19,7 @@ You can generate more by running:
 java -jar android-studio-poet-all-1.0-SNAPSHOT-BAZEL-EXTENSIONS.jar example_config.json
 ```
 
-where [example_config.json]() contains your desired project setup.
+where [example_config.json](example_config.json) contains your desired project setup.
 
 The `android-studio-poet` fork is here: https://github.com/jin/android-studio-poet
 
