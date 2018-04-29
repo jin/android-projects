@@ -1,0 +1,17 @@
+digraph connected {
+  androidAppModule0 -> androidAppModule1, androidAppModule3, androidAppModule4, androidAppModule5, module0, module1, module2;
+  androidAppModule1 -> androidAppModule2, androidAppModule5, androidAppModule6, androidAppModule8, androidAppModule9, module2, module3, module4;
+  androidAppModule2 -> androidAppModule9, module3;
+  androidAppModule3 -> androidAppModule5, androidAppModule7, module1, module3;
+  androidAppModule4 -> androidAppModule6, androidAppModule7, androidAppModule9, module0, module4;
+  androidAppModule5 -> androidAppModule6, androidAppModule7, module2, module3;
+  androidAppModule6 -> androidAppModule7, androidAppModule8, module3;
+  androidAppModule7 -> androidAppModule8, androidAppModule9, module0, module1, module3;
+  androidAppModule8 -> androidAppModule9, module1, module2, module3;
+  androidAppModule9 -> module2, module3, module4;
+  module0 -> module1, module2, module3, module4;
+  module1 -> module2, module3, module4;
+  module2 -> module4;
+  module3;
+  module4;
+}

@@ -39,6 +39,16 @@ For all projects:
 
 ![](full/bazel_graph.png)
 
+## [connected](/connected)
+
+### Gradle graph
+
+![](connected/gradle_graph.png)
+
+### Bazel graph
+
+![](connected/bazel_graph.png)
+
 ## [linear](/linear)
 
 ### Gradle graph
@@ -78,6 +88,10 @@ For all projects:
 ### Bazel graph
 
 ![](connected_rectangle/bazel_graph.png)
+
+# Others
+
+These are the larger versions of the topologies.
 
 ## [topology_connected](/topology_connected)
 

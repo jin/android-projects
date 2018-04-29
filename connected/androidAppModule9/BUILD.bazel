@@ -1,0 +1,14 @@
+android_library(
+    name = "androidAppModule9",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resource_files = glob(["src/main/res/**/*"]),
+    manifest = "src/main/AndroidManifest.xml",
+    custom_package = "com.androidAppModule9",
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//module2",
+        "//module3",
+        "//module4"
+    ],
+)
+        
