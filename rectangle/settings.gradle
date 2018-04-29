@@ -1,0 +1,3 @@
+rootProject.name = 'rectangle'
+
+include 'androidAppModule0','androidAppModule1','androidAppModule2','androidAppModule3','androidAppModule4','androidAppModule5','androidAppModule6','androidAppModule7','androidAppModule8','androidAppModule9','module0','module1','module2','module3','module4'
