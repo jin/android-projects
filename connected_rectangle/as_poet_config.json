@@ -1,0 +1,26 @@
+{
+  "projectName": "connected_rectangle",
+  "root": "./../",
+  "gradleVersion": "4.3.1",
+  "androidGradlePluginVersion": "3.0.1",
+  "kotlinVersion": "1.1.60",
+  "numModules": "5",
+  "allMethods": "40",
+  "javaPackageCount": "1",
+  "javaClassCount": "5",
+  "javaMethodCount": "20",
+  "kotlinPackageCount": "0",
+  "kotlinClassCount": "0",
+  "androidModules": "10",
+  "numActivitiesPerAndroidModule": "10",
+  "productFlavors": [
+      1
+   ],
+   "topologies": [
+      {"type": "connected_rectangle", "seed": "2", "width": 2}
+   ],
+  "dependencies": [
+  ],
+  "buildTypes": 1,
+  "generateTests": false
+}

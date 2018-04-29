@@ -69,6 +69,16 @@ For all projects:
 
 ![](rectangle/bazel_graph.png)
 
+## [connected_rectangle](/connected_rectangle)
+
+### Gradle graph
+
+![](connected_rectangle/gradle_graph.png)
+
+### Bazel graph
+
+![](connected_rectangle/bazel_graph.png)
+
 ## [topology_connected](/topology_connected)
 
 ### Gradle graph
