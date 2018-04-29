@@ -1,0 +1,25 @@
+android_binary(
+    name = "androidAppModule0",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resource_files = glob(["src/main/res/**/*"]),
+    manifest = "src/main/AndroidManifest.xml",
+    custom_package = "com.androidAppModule0",
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//androidAppModule1",
+        "//androidAppModule2",
+        "//androidAppModule3",
+        "//androidAppModule4",
+        "//androidAppModule5",
+        "//androidAppModule6",
+        "//androidAppModule7",
+        "//androidAppModule8",
+        "//androidAppModule9",
+        "//module0",
+        "//module1",
+        "//module2",
+        "//module3",
+        "//module4"
+    ],
+)
+        

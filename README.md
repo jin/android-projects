@@ -29,6 +29,16 @@ For all projects:
 
 ![](variable_tree/bazel_graph.png)
 
+### [full](/full)
+
+#### Gradle graph
+
+![](full/gradle_graph.png)
+
+#### Bazel graph
+
+![](full/bazel_graph.png)
+
 ### [topology_connected](/topology_connected)
 
 #### Gradle graph
