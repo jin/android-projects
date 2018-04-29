@@ -8,6 +8,16 @@
 
 ![](simple_tree/bazel_graph.png)
 
+### variable_tree
+
+#### Gradle graph
+
+![](variable_tree/gradle_graph.png)
+
+#### Bazel graph
+
+![](variable_tree/bazel_graph.png)
+
 ### topology_connected
 
 #### Gradle graph
