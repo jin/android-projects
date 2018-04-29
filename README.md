@@ -9,6 +9,8 @@ For all projects:
 - `bazel build //androidAppModule0`
 - `gradle assembleDebug`
 
+The projects are generated using various topologies, listed [here](https://github.com/android/android-studio-poet/commit/d7a97aa679438aedac7229b50f72d9526552b8b7).
+
 ## [simple_tree](/simple_tree)
 
 ### Gradle graph
