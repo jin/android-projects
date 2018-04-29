@@ -4,12 +4,26 @@ A selection of generated Android projects buildable with Gradle and Bazel.
 
 This project is used for A/B testing build optimizations with the build systems.
 
-For all projects:
+For all projects, in each subdirectory:
 
 - `bazel build //androidAppModule0`
 - `gradle assembleDebug`
 
+or build all `android_binary` targets with `bazel build //:all_android_binaries` at the top level.
+
 The projects are generated using various topologies, listed [here](https://github.com/android/android-studio-poet/commit/d7a97aa679438aedac7229b50f72d9526552b8b7).
+
+You can generate more by running:
+
+```
+java -jar android-studio-poet-all-1.0-SNAPSHOT-BAZEL-EXTENSIONS.jar example_config.json
+```
+
+where [example_config.json]() contains your desired project setup.
+
+The `android-studio-poet` fork is here: https://github.com/jin/android-studio-poet
+
+# Projects
 
 ## [simple_tree](/simple_tree)
 
