@@ -9,52 +9,52 @@ For all projects:
 - `bazel build //androidAppModule0`
 - `gradle assembleDebug`
 
-### [simple_tree](/simple_tree)
+## [simple_tree](/simple_tree)
 
-#### Gradle graph
+### Gradle graph
 
 ![](simple_tree/gradle_graph.png)
 
-#### Bazel graph
+### Bazel graph
 
 ![](simple_tree/bazel_graph.png)
 
-### [variable_tree](/variable_tree)
+## [variable_tree](/variable_tree)
 
-#### Gradle graph
+### Gradle graph
 
 ![](variable_tree/gradle_graph.png)
 
-#### Bazel graph
+### Bazel graph
 
 ![](variable_tree/bazel_graph.png)
 
-### [full](/full)
+## [full](/full)
 
-#### Gradle graph
+### Gradle graph
 
 ![](full/gradle_graph.png)
 
-#### Bazel graph
+### Bazel graph
 
 ![](full/bazel_graph.png)
 
-### [linear](/linear)
+## [linear](/linear)
 
-#### Gradle graph
+### Gradle graph
 
 ![](linear/gradle_graph.png)
 
-#### Bazel graph
+### Bazel graph
 
 ![](linear/bazel_graph.png)
 
-### [topology_connected](/topology_connected)
+## [topology_connected](/topology_connected)
 
-#### Gradle graph
+### Gradle graph
 
 ![](topology_connected/gradle_graph.png)
 
-#### Bazel graph
+### Bazel graph
 
 ![](topology_connected/bazel_graph.png)
