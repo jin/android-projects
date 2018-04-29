@@ -2,5 +2,16 @@ load("//:repositories.bzl", "repositories")
 
 filegroup(
     name = "all_android_binaries",
-    srcs = ["@%s//androidAppModule0" % repository for repository in repositories]
+    srcs = ["@%s//androidAppModule0" % repository for repository in repositories],
+)
+
+java_import(
+    name = "android_studio_poet_import",
+    jars = ["android-studio-poet-all-1.0-SNAPSHOT-BAZEL-EXTENSIONS.jar"],
+)
+
+java_binary(
+    name = "android_studio_poet",
+    runtime_deps = [":android_studio_poet_import"],
+    main_class = "com.google.androidstudiopoet.AndroidStudioPoet",
 )
