@@ -1,0 +1,17 @@
+android_library(
+    name = "androidAppModule2",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resource_files = glob(["src/main/res/**/*"]),
+    manifest = "src/main/AndroidManifest.xml",
+    custom_package = "com.androidAppModule2",
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//androidAppModule21",
+        "//androidAppModule3",
+        "//androidAppModule5",
+        "//androidAppModule6",
+        "//androidAppModule69",
+        "//module1"
+    ],
+)
+        

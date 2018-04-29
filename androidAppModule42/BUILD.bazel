@@ -1,0 +1,14 @@
+android_library(
+    name = "androidAppModule42",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resource_files = glob(["src/main/res/**/*"]),
+    manifest = "src/main/AndroidManifest.xml",
+    custom_package = "com.androidAppModule42",
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//module22",
+        "//module35",
+        "//module4"
+    ],
+)
+        
