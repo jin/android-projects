@@ -27,7 +27,7 @@ cleanWithColdLocalCache {
 ################################################################################
 abiChangeWithLeafLocalCache {
   tasks = [":androidAppModule0:assembleDebug"]
-  apply-abi-change-to = "androidAppModule4/src/main/java/androidAppModule4packageJava0/Foo0.java"
+  apply-abi-change-to = "androidAppModule99/src/main/java/androidAppModule99packageJava0/Foo0.java"
   clear-build-cache-before = SCENARIO
   bazel {
         targets = ["//androidAppModule0"]
@@ -65,7 +65,7 @@ abiChangeWithRootLocalCache {
 ################################################################################
 nonAbiChangeWithLeafLocalCache {
   tasks = [":androidAppModule0:assembleDebug"]
-  apply-non-abi-change-to = "androidAppModule4/src/main/java/androidAppModule4packageJava0/Foo0.java"
+  apply-non-abi-change-to = "androidAppModule99/src/main/java/androidAppModule99packageJava0/Foo0.java"
   clear-build-cache-before = SCENARIO
   bazel {
         targets = ["//androidAppModule0"]
@@ -103,7 +103,7 @@ nonAbiChangeWithRootLocalCache {
 ################################################################################
 androidResourceChangeWithLeafLocalCache {
   tasks = [":androidAppModule0:assembleDebug"]
-  apply-android-resource-change-to = "androidAppModule4/src/main/res/values/strings.xml"
+  apply-android-resource-change-to = "androidAppModule99/src/main/res/values/strings.xml"
   clear-build-cache-before = SCENARIO
   bazel {
         targets = ["//androidAppModule0"]
@@ -142,7 +142,7 @@ androidResourceChangeWithRootLocalCache {
 ################################################################################
 androidManifestChangeWithLeafLocalCache {
   tasks = [":androidAppModule0:assembleDebug"]
-  apply-android-manifest-change-to = "androidAppModule4/src/main/AndroidManifest.xml"
+  apply-android-manifest-change-to = "androidAppModule99/src/main/AndroidManifest.xml"
   clear-build-cache-before = SCENARIO
   bazel {
         targets = ["//androidAppModule4"]
