@@ -1,0 +1,13 @@
+java_library(
+    name = "module16",
+    srcs = glob(["src/main/java/**/*.java"]),
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//module17",
+        "//module20",
+        "//module29",
+        "//module19",
+        "//module23"
+    ],
+)
+        

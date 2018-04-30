@@ -1,0 +1,31 @@
+android_library(
+    name = "androidAppModule18",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resource_files = glob(["src/main/res/**/*"]),
+    manifest = "src/main/AndroidManifest.xml",
+    custom_package = "com.androidAppModule18",
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//androidAppModule21",
+        "//androidAppModule23",
+        "//androidAppModule24",
+        "//androidAppModule25",
+        "//androidAppModule27",
+        "//androidAppModule28",
+        "//androidAppModule29",
+        "//module0",
+        "//module11",
+        "//module12",
+        "//module14",
+        "//module16",
+        "//module19",
+        "//module22",
+        "//module23",
+        "//module24",
+        "//module29",
+        "//module4",
+        "//module7",
+        "//module9"
+    ],
+)
+        

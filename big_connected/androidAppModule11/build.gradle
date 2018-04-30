@@ -1,0 +1,66 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        buildType0 {
+
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    flavorDimensions "dim0"
+    productFlavors {
+        dim0flav0 {
+            dimension "dim0"
+        }
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':androidAppModule12')
+    implementation project(':androidAppModule13')
+    implementation project(':androidAppModule14')
+    implementation project(':androidAppModule16')
+    implementation project(':androidAppModule17')
+    implementation project(':androidAppModule23')
+    implementation project(':androidAppModule24')
+    implementation project(':androidAppModule25')
+    implementation project(':androidAppModule26')
+    implementation project(':module0')
+    implementation project(':module1')
+    implementation project(':module11')
+    implementation project(':module13')
+    implementation project(':module16')
+    implementation project(':module17')
+    implementation project(':module19')
+    implementation project(':module21')
+    implementation project(':module22')
+    implementation project(':module25')
+    implementation project(':module26')
+    implementation project(':module27')
+    implementation project(':module29')
+    implementation project(':module4')
+    implementation project(':module6')
+    implementation project(':module8')
+    implementation project(':module9')
+    implementation "com.android.support:appcompat-v7:26.1.0"
+    implementation "com.android.support.constraint:constraint-layout:1.0.2"
+    testImplementation "junit:junit:4.12"
+    androidTestImplementation "com.android.support.test:runner:1.0.1"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:3.0.1"
+    implementation "com.android.support:multidex:1.0.1"
+}

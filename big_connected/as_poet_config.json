@@ -1,0 +1,26 @@
+{
+  "projectName": "big_connected",
+  "root": ".",
+  "gradleVersion": "4.7",
+  "androidGradlePluginVersion": "3.1.0",
+  "kotlinVersion": "1.1.60",
+  "numModules": "30",
+  "allMethods": "40",
+  "javaPackageCount": "1",
+  "javaClassCount": "5",
+  "javaMethodCount": "20",
+  "kotlinPackageCount": "0",
+  "kotlinClassCount": "0",
+  "androidModules": "30",
+  "numActivitiesPerAndroidModule": "10",
+  "productFlavors": [
+      1
+   ],
+   "topologies": [
+      {"type": "connected", "seed": "2", "density": 0.5}
+   ],
+  "dependencies": [
+  ],
+  "buildTypes": 1,
+  "generateTests": false
+}

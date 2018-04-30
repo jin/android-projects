@@ -1,0 +1,24 @@
+android_library(
+    name = "androidAppModule20",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resource_files = glob(["src/main/res/**/*"]),
+    manifest = "src/main/AndroidManifest.xml",
+    custom_package = "com.androidAppModule20",
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//androidAppModule23",
+        "//androidAppModule26",
+        "//androidAppModule28",
+        "//module1",
+        "//module10",
+        "//module12",
+        "//module13",
+        "//module20",
+        "//module24",
+        "//module27",
+        "//module5",
+        "//module6",
+        "//module9"
+    ],
+)
+        

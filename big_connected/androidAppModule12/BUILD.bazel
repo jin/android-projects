@@ -1,0 +1,33 @@
+android_library(
+    name = "androidAppModule12",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resource_files = glob(["src/main/res/**/*"]),
+    manifest = "src/main/AndroidManifest.xml",
+    custom_package = "com.androidAppModule12",
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//androidAppModule14",
+        "//androidAppModule18",
+        "//androidAppModule19",
+        "//androidAppModule21",
+        "//androidAppModule23",
+        "//androidAppModule26",
+        "//androidAppModule27",
+        "//androidAppModule28",
+        "//androidAppModule29",
+        "//module10",
+        "//module11",
+        "//module13",
+        "//module15",
+        "//module21",
+        "//module22",
+        "//module23",
+        "//module25",
+        "//module26",
+        "//module28",
+        "//module29",
+        "//module5",
+        "//module7"
+    ],
+)
+        

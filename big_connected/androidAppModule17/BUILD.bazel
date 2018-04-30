@@ -1,0 +1,32 @@
+android_library(
+    name = "androidAppModule17",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resource_files = glob(["src/main/res/**/*"]),
+    manifest = "src/main/AndroidManifest.xml",
+    custom_package = "com.androidAppModule17",
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//androidAppModule19",
+        "//androidAppModule20",
+        "//androidAppModule22",
+        "//androidAppModule23",
+        "//androidAppModule24",
+        "//androidAppModule25",
+        "//androidAppModule29",
+        "//module11",
+        "//module12",
+        "//module13",
+        "//module14",
+        "//module16",
+        "//module20",
+        "//module23",
+        "//module26",
+        "//module27",
+        "//module29",
+        "//module3",
+        "//module5",
+        "//module8",
+        "//module9"
+    ],
+)
+        

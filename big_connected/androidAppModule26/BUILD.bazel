@@ -1,0 +1,28 @@
+android_library(
+    name = "androidAppModule26",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resource_files = glob(["src/main/res/**/*"]),
+    manifest = "src/main/AndroidManifest.xml",
+    custom_package = "com.androidAppModule26",
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//module10",
+        "//module11",
+        "//module12",
+        "//module14",
+        "//module15",
+        "//module17",
+        "//module18",
+        "//module2",
+        "//module20",
+        "//module21",
+        "//module23",
+        "//module26",
+        "//module3",
+        "//module4",
+        "//module6",
+        "//module8",
+        "//module9"
+    ],
+)
+        

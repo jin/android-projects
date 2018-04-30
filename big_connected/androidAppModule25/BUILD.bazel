@@ -1,0 +1,28 @@
+android_library(
+    name = "androidAppModule25",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resource_files = glob(["src/main/res/**/*"]),
+    manifest = "src/main/AndroidManifest.xml",
+    custom_package = "com.androidAppModule25",
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//androidAppModule26",
+        "//androidAppModule28",
+        "//androidAppModule29",
+        "//module0",
+        "//module10",
+        "//module12",
+        "//module13",
+        "//module17",
+        "//module18",
+        "//module20",
+        "//module24",
+        "//module27",
+        "//module28",
+        "//module29",
+        "//module4",
+        "//module7",
+        "//module8"
+    ],
+)
+        

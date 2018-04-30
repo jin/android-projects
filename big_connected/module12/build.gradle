@@ -1,0 +1,13 @@
+apply plugin: 'java-library'
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':module21')
+    implementation project(':module23')
+    implementation project(':module13')
+    implementation project(':module15')
+    implementation project(':module26')
+    implementation project(':module17')
+    implementation project(':module29')
+}
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
