@@ -1,0 +1,14 @@
+android_library(
+    name = "androidAppModule43",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resource_files = glob(["src/main/res/**/*"]),
+    manifest = "src/main/AndroidManifest.xml",
+    custom_package = "com.androidAppModule43",
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//module7",
+        "//module8",
+        "//module9"
+    ],
+)
+        

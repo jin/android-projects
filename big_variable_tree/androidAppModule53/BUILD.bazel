@@ -1,0 +1,16 @@
+android_library(
+    name = "androidAppModule53",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resource_files = glob(["src/main/res/**/*"]),
+    manifest = "src/main/AndroidManifest.xml",
+    custom_package = "com.androidAppModule53",
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//module34",
+        "//module35",
+        "//module36",
+        "//module37",
+        "//module38"
+    ],
+)
+        

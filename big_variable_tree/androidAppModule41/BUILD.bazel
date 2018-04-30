@@ -1,0 +1,14 @@
+android_library(
+    name = "androidAppModule41",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resource_files = glob(["src/main/res/**/*"]),
+    manifest = "src/main/AndroidManifest.xml",
+    custom_package = "com.androidAppModule41",
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//androidAppModule99",
+        "//module0",
+        "//module1"
+    ],
+)
+        

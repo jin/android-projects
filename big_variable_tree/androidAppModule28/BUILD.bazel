@@ -1,0 +1,17 @@
+android_library(
+    name = "androidAppModule28",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resource_files = glob(["src/main/res/**/*"]),
+    manifest = "src/main/AndroidManifest.xml",
+    custom_package = "com.androidAppModule28",
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//androidAppModule58",
+        "//androidAppModule59",
+        "//androidAppModule60",
+        "//androidAppModule61",
+        "//androidAppModule62",
+        "//androidAppModule63"
+    ],
+)
+        

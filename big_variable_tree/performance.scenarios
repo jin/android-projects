@@ -1,0 +1,176 @@
+################################################################################
+# Local Cache - Cold Only
+################################################################################
+cleanWithColdLocalCache {
+  tasks = [":androidAppModule0:assembleDebug"]
+  clear-build-cache-before = BUILD
+  cleanup-tasks = ["clean", "cleanBuildCache"]
+  run-using = no-daemon
+  bazel {
+    targets = ["//androidAppModule0"]
+    commands = ["build", "--spawn_strategy=standalone"]
+    clean-build-before = [
+      {
+        schedule = SCENARIO
+        commands = ["bazel", "clean", "--expunge"]
+      },
+      {
+        schedule = BUILD
+        commands = ["bazel", "clean", "--expunge"]
+      }
+    ]
+  }
+}
+
+################################################################################
+# ABI Leaf, Local Cache
+################################################################################
+abiChangeWithLeafLocalCache {
+  tasks = [":androidAppModule0:assembleDebug"]
+  apply-abi-change-to = "androidAppModule4/src/main/java/androidAppModule4packageJava0/Foo0.java"
+  clear-build-cache-before = SCENARIO
+  bazel {
+        targets = ["//androidAppModule0"]
+        commands = ["build", "--spawn_strategy=standalone"]
+        clean-build-before = [
+          {
+            schedule = SCENARIO
+            commands = ["bazel", "clean", "--expunge"]
+          }
+        ]
+  }
+}
+
+################################################################################
+# ABI Root, Local Cache
+################################################################################
+abiChangeWithRootLocalCache {
+  tasks = [":androidAppModule0:assembleDebug"]
+  apply-abi-change-to = "androidAppModule0/src/main/java/com/androidAppModule0/Activity0.java"
+  clear-build-cache-before = SCENARIO
+  bazel {
+        targets = ["//androidAppModule0"]
+        commands = ["build", "--spawn_strategy=standalone"]
+        clean-build-before = [
+          {
+            schedule = SCENARIO
+            commands = ["bazel", "clean", "--expunge"]
+          }
+        ]
+  }
+}
+
+################################################################################
+# non-ABI Leaf, Local Cache
+################################################################################
+nonAbiChangeWithLeafLocalCache {
+  tasks = [":androidAppModule0:assembleDebug"]
+  apply-non-abi-change-to = "androidAppModule4/src/main/java/androidAppModule4packageJava0/Foo0.java"
+  clear-build-cache-before = SCENARIO
+  bazel {
+        targets = ["//androidAppModule0"]
+        commands = ["build", "--spawn_strategy=standalone"]
+        clean-build-before = [
+          {
+            schedule = SCENARIO
+            commands = ["bazel", "clean", "--expunge"]
+          }
+        ]
+  }
+}
+
+################################################################################
+# non-ABI Root, Local Cache
+################################################################################
+nonAbiChangeWithRootLocalCache {
+  tasks = [":androidAppModule0:assembleDebug"]
+  apply-non-abi-change-to = "androidAppModule0/src/main/java/com/androidAppModule0/Activity0.java"
+  clear-build-cache-before = SCENARIO
+  bazel {
+        targets = ["//androidAppModule0"]
+        commands = ["build", "--spawn_strategy=standalone"]
+        clean-build-before = [
+          {
+            schedule = SCENARIO
+            commands = ["bazel", "clean", "--expunge"]
+          }
+        ]
+  }
+}
+
+################################################################################
+# Resource change Leaf, Local Cache
+################################################################################
+androidResourceChangeWithLeafLocalCache {
+  tasks = [":androidAppModule0:assembleDebug"]
+  apply-android-resource-change-to = "androidAppModule4/src/main/res/values/strings.xml"
+  clear-build-cache-before = SCENARIO
+  bazel {
+        targets = ["//androidAppModule0"]
+        commands = ["build", "--spawn_strategy=standalone"]
+        clean-build-before = [
+          {
+            schedule = SCENARIO
+            commands = ["bazel", "clean", "--expunge"]
+          }
+        ]
+  }
+
+}
+
+################################################################################
+# Resource change Root, Local Cache
+################################################################################
+androidResourceChangeWithRootLocalCache {
+  tasks = [":androidAppModule0:assembleDebug"]
+  apply-android-resource-change-to = "androidAppModule0/src/main/res/values/strings.xml"
+  clear-build-cache-before = SCENARIO
+  bazel {
+        targets = ["//androidAppModule0"]
+        commands = ["build", "--spawn_strategy=standalone"]
+        clean-build-before = [
+          {
+            schedule = SCENARIO
+            commands = ["bazel", "clean", "--expunge"]
+          }
+        ]
+  }
+}
+
+################################################################################
+# Manifest change Leaf, Local Cache
+################################################################################
+androidManifestChangeWithLeafLocalCache {
+  tasks = [":androidAppModule0:assembleDebug"]
+  apply-android-manifest-change-to = "androidAppModule4/src/main/AndroidManifest.xml"
+  clear-build-cache-before = SCENARIO
+  bazel {
+        targets = ["//androidAppModule4"]
+        commands = ["build", "--spawn_strategy=standalone"]
+        clean-build-before = [
+          {
+            schedule = SCENARIO
+            commands = ["bazel", "clean", "--expunge"]
+          }
+        ]
+  }
+}
+
+################################################################################
+# Manifest change Root, Local Cache
+################################################################################
+androidManifestChangeWithRootLocalCache {
+  tasks = [":androidAppModule0:assembleDebug"]
+  apply-android-manifest-change-to = "androidAppModule0/src/main/AndroidManifest.xml"
+  clear-build-cache-before = SCENARIO
+  bazel {
+        targets = ["//androidAppModule0"]
+        commands = ["build", "--spawn_strategy=standalone"]
+        clean-build-before = [
+          {
+            schedule = SCENARIO
+            commands = ["bazel", "clean", "--expunge"]
+          }
+        ]
+  }
+}

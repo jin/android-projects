@@ -1,0 +1,25 @@
+{
+  "projectName": "big_variable_tree",
+  "root": ".",
+  "gradleVersion": "4.3.1",
+  "androidGradlePluginVersion": "3.0.1",
+  "kotlinVersion": "1.1.60",
+  "numModules": "50",
+  "allMethods": "40",
+  "javaPackageCount": "1",
+  "javaClassCount": "5",
+  "javaMethodCount": "20",
+  "kotlinPackageCount": "0",
+  "kotlinClassCount": "0",
+  "androidModules": "100",
+  "numActivitiesPerAndroidModule": "10",
+  "productFlavors": [
+      1
+   ],
+   "topologies": [
+      {"type": "variable_tree", "seed": "6", "wideness": "0.5"}
+   ],
+  "dependencies": [],
+  "buildTypes": 1,
+  "generateTests": false
+}

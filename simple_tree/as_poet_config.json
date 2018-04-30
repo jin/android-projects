@@ -1,6 +1,6 @@
 {
   "projectName": "simple_tree",
-  "root": "./../",
+  "root": ".",
   "gradleVersion": "4.3.1",
   "androidGradlePluginVersion": "3.0.1",
   "kotlinVersion": "1.1.60",

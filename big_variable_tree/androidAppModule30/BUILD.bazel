@@ -1,0 +1,24 @@
+android_library(
+    name = "androidAppModule30",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resource_files = glob(["src/main/res/**/*"]),
+    manifest = "src/main/AndroidManifest.xml",
+    custom_package = "com.androidAppModule30",
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//androidAppModule69",
+        "//androidAppModule70",
+        "//androidAppModule71",
+        "//androidAppModule72",
+        "//androidAppModule73",
+        "//androidAppModule74",
+        "//androidAppModule75",
+        "//androidAppModule76",
+        "//androidAppModule77",
+        "//androidAppModule78",
+        "//androidAppModule79",
+        "//androidAppModule80",
+        "//androidAppModule81"
+    ],
+)
+        
