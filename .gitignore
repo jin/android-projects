@@ -1,1 +1,5 @@
 bazel-*
+.gradle
+gradle-user-home/
+build/
+output/
