@@ -1,15 +1,26 @@
 # android_projects
 
-A selection of generated Android projects buildable with Gradle and Bazel.
+A selection of generated Android projects buildable with Gradle and Bazel,
+inspired by
+[https://github.com/sunyal/gradle-profiler](https://github.com/sunyal/gradle-profiler).
+This project reuses some of the configuration and scripts in
+[https://github.com/sunyal/gradle-profiler](https://github.com/sunyal/gradle-profiler)
+as well.
 
-This project is used for A/B testing build optimizations with the build systems.
+These projects are used for A/B testing build optimizations with the build systems.
+
+# Building and benchmarking
 
 For all projects, in each subdirectory:
 
 - `bazel build //androidAppModule0`
 - `gradle assembleDebug`
 
-or build all `android_binary` targets with `bazel build //:all_android_binaries` at the top level.
+To benchmark, run the project's `benchmark.sh` script to trigger builds with
+Gradle and Bazel. The results are recorded as CSV and HTML in the project's
+`output` folder.
+
+# Project generation
 
 The projects are generated using various topologies, listed
 [here](https://github.com/android/android-studio-poet/commit/d7a97aa679438aedac7229b50f72d9526552b8b7).

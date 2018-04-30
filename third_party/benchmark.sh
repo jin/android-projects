@@ -1,4 +1,5 @@
 #!/bin/bash
+# From https://github.com/sunyal/gradle-profiler
 
 if [ -z "$ANDROID_HOME" ]
 then
