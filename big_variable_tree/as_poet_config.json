@@ -1,8 +1,8 @@
 {
-  "projectName": "big_variable_tree",
+  "projectName": "big_variable_tree_gradle_4_7_bazel_13",
   "root": ".",
-  "gradleVersion": "4.3.1",
-  "androidGradlePluginVersion": "3.0.1",
+  "gradleVersion": "4.7",
+  "androidGradlePluginVersion": "3.1.0",
   "kotlinVersion": "1.1.60",
   "numModules": "50",
   "allMethods": "40",

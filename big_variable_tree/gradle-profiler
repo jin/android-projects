@@ -1,4 +1,5 @@
 #!/bin/bash
+# From https://github.com/sunyal/gradle-profiler 
 
 GRADLE_PROFILER_HOME=~/.gradle-profiler
 
