@@ -5,5 +5,8 @@ android_library(
     manifest = "src/main/AndroidManifest.xml",
     custom_package = "com.androidAppModule9",
     visibility = ["//visibility:public"], 
+    deps = [
+        "//module0"
+    ],
 )
         

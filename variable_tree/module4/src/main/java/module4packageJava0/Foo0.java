@@ -3,6 +3,7 @@ package module4packageJava0;
 public class Foo0 {
   public void foo0() {
     final Runnable anything = () -> System.out.println("anything");
+    new module0packageJava0.Foo4().foo3();
   }
 
   public void foo1() {
