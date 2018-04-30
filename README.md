@@ -101,6 +101,16 @@ Gradle and Bazel to run the scenarios defined in the project's
 
 ![](connected/bazel_graph.png)
 
+## [big_connected](/big_connected)
+
+### Gradle graph
+
+![](big_connected/gradle_graph.png)
+
+### Bazel graph
+
+![](big_connected/bazel_graph.png)
+
 ## [linear](/linear)
 
 ### Gradle graph
