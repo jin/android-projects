@@ -1,4 +1,5 @@
 #!/bin/bash
+# From https://github.com/sunyal/gradle-profiler
 
 if [ -z "$ANDROID_HOME" ]
 then
@@ -24,5 +25,3 @@ cp performance.scenarios $outputDir/
 
 ./gradle-profiler --benchmark $targets --iterations=$iterations --warmups=$warmups --output-dir=$outputDir/gradle
 ./gradle-profiler --benchmark --bazel $targets --iterations=$iterations --warmups=$warmups --output-dir=$outputDir/bazel
-
-./gradlew clean cleanBuildCache
