@@ -145,7 +145,7 @@ androidManifestChangeWithLeafLocalCache {
   apply-android-manifest-change-to = "androidAppModule99/src/main/AndroidManifest.xml"
   clear-build-cache-before = SCENARIO
   bazel {
-        targets = ["//androidAppModule4"]
+        targets = ["//androidAppModule0"]
         commands = ["build", "--spawn_strategy=standalone"]
         clean-build-before = [
           {
