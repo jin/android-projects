@@ -1,26 +1,25 @@
 {
-  "projectName": "YourProjectConfigurationName",
-  "root": "./",
-  "gradleVersion": "4.3.1",
-  "androidGradlePluginVersion": "3.0.1",
+  "projectName": "SetYourProjectName",
+  "root": ".",
+  "gradleVersion": "4.7",
+  "androidGradlePluginVersion": "3.1.0",
   "kotlinVersion": "1.1.60",
-  "numModules": "2",
+  "numModules": "50",
   "allMethods": "40",
   "javaPackageCount": "1",
-  "javaClassCount": "4",
+  "javaClassCount": "5",
   "javaMethodCount": "20",
   "kotlinPackageCount": "0",
   "kotlinClassCount": "0",
-  "androidModules": "2",
-  "numActivitiesPerAndroidModule": "2",
+  "androidModules": "100",
+  "numActivitiesPerAndroidModule": "10",
   "productFlavors": [
-    1
-  ],
-  "topologies": [
-    {"type": "star", "seed": "2"}
-  ],
-  "dependencies": [
-  ],
+      1
+   ],
+   "topologies": [
+      {"type": "variable_tree", "seed": "6", "wideness": "0.5"}
+   ],
+  "dependencies": [],
   "buildTypes": 1,
   "generateTests": false
 }

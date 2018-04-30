@@ -25,5 +25,3 @@ cp performance.scenarios $outputDir/
 
 ./gradle-profiler --benchmark $targets --iterations=$iterations --warmups=$warmups --output-dir=$outputDir/gradle
 ./gradle-profiler --benchmark --bazel $targets --iterations=$iterations --warmups=$warmups --output-dir=$outputDir/bazel
-
-./gradlew clean cleanBuildCache

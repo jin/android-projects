@@ -1,4 +1,8 @@
 # From https://github.com/sunyal/gradle-profiler
+# INSTRUCTION:
+#
+# For leaf scenarios, change the androidAppModule number and package name to a
+# leaf node as shown in the Gradle/Bazel graphs.
 
 ################################################################################
 # Local Cache - Cold Only
