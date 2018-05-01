@@ -1,0 +1,15 @@
+#!/bin/bash
+# From https://github.com/sunyal/gradle-profiler 
+
+GRADLE_PROFILER_HOME=~/.gradle-profiler
+
+if test -d $GRADLE_PROFILER_HOME && git -C $GRADLE_PROFILER_HOME status > /dev/null ; then
+  echo "gradle-profiler at $GRADLE_PROFILER_HOME already exists, attempting to update"
+  git -C $GRADLE_PROFILER_HOME pull
+else
+  echo "Cloning gradle-profiler to $GRADLE_PROFILER_HOME"
+  git clone https://github.com/sunyal/gradle-profiler.git $GRADLE_PROFILER_HOME --branch master --depth 1
+fi
+$GRADLE_PROFILER_HOME/gradlew -p $GRADLE_PROFILER_HOME installDist
+
+$GRADLE_PROFILER_HOME/build/install/gradle-profiler/bin/gradle-profiler --project-dir . --scenario-file ./performance.scenarios "$@"
