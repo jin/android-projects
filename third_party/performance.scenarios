@@ -3,8 +3,6 @@
 #
 # For leaf scenarios, change the androidAppModule number and package name to a
 # leaf node as shown in the Gradle/Bazel graphs.
-#
-# For instance, this project uses androidAppModule4 as a leaf node.
 
 ################################################################################
 # Local Cache - Cold Only
