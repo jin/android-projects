@@ -29,6 +29,29 @@ cleanWithColdLocalCache {
 }
 
 ################################################################################
+# Local Cache - Cold, but keeping Gradle Daemon / Bazel Server alive
+################################################################################
+cleanWithColdLocalCacheWithDaemon {
+  tasks = [":androidAppModule0:assembleDebug"]
+  clear-build-cache-before = BUILD
+  cleanup-tasks = ["clean", "cleanBuildCache"]
+  bazel {
+    targets = ["//androidAppModule0"]
+    commands = ["build", "--spawn_strategy=standalone"]
+    clean-build-before = [
+      {
+        schedule = SCENARIO
+        commands = ["bazel", "clean", "--expunge"]
+      },
+      {
+        schedule = BUILD
+        commands = ["bazel", "clean"]
+      }
+    ]
+  }
+}
+
+################################################################################
 # ABI Leaf, Local Cache
 ################################################################################
 abiChangeWithLeafLocalCache {
