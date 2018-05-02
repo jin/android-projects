@@ -11,7 +11,7 @@ if ! [ -x "$(command -v bazel)" ]; then
   exit 1
 fi
 
-targets="cleanWithColdLocalCache abiChangeWithLeafLocalCache abiChangeWithRootLocalCache nonAbiChangeWithLeafLocalCache nonAbiChangeWithRootLocalCache androidManifestChangeWithLeafLocalCache androidManifestChangeWithRootLocalCache androidResourceChangeWithLeafLocalCache androidResourceChangeWithRootLocalCache"
+targets="cleanWithColdLocalCache cleanWithColdLocalCacheWithDaemon abiChangeWithLeafLocalCache abiChangeWithRootLocalCache nonAbiChangeWithLeafLocalCache nonAbiChangeWithRootLocalCache androidManifestChangeWithLeafLocalCache androidManifestChangeWithRootLocalCache androidResourceChangeWithLeafLocalCache androidResourceChangeWithRootLocalCache"
 timestampDir=$(date +"%Y%m%d_%H%M%S")
 outputDir=output/$timestampDir
 iterations=10
