@@ -1,3 +1,5 @@
+load("@gmaven_rules//:defs.bzl", "gmaven_artifact")
+
 android_binary(
     name = "androidAppModule0",
     srcs = glob(["src/main/java/**/*.java"]),
@@ -32,7 +34,10 @@ android_binary(
         "//module4",
         "//module5",
         "//module6",
-        "//module9"
+        "//module9",
+        gmaven_artifact("com.android.support:appcompat-v7:aar:26.1.0"),
+        gmaven_artifact("com.android.support.constraint:constraint-layout:aar:1.0.2"),
+        gmaven_artifact("com.android.support:multidex:aar:1.0.1")
     ],
 )
         

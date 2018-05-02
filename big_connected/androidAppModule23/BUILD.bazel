@@ -1,3 +1,5 @@
+load("@gmaven_rules//:defs.bzl", "gmaven_artifact")
+
 android_library(
     name = "androidAppModule23",
     srcs = glob(["src/main/java/**/*.java"]),
@@ -27,7 +29,10 @@ android_library(
         "//module6",
         "//module7",
         "//module8",
-        "//module9"
+        "//module9",
+        gmaven_artifact("com.android.support:appcompat-v7:aar:26.1.0"),
+        gmaven_artifact("com.android.support.constraint:constraint-layout:aar:1.0.2"),
+        gmaven_artifact("com.android.support:multidex:aar:1.0.1")
     ],
 )
         

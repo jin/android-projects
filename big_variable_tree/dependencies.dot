@@ -1,4 +1,4 @@
-digraph big_variable_tree_gradle_4_7_bazel_13 {
+digraph big_variable_tree {
   androidAppModule0 -> androidAppModule1, androidAppModule2, androidAppModule3;
   androidAppModule1 -> androidAppModule4, androidAppModule5;
   androidAppModule2 -> androidAppModule6, androidAppModule7;

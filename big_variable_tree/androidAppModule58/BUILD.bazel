@@ -1,3 +1,5 @@
+load("@gmaven_rules//:defs.bzl", "gmaven_artifact")
+
 android_library(
     name = "androidAppModule58",
     srcs = glob(["src/main/java/**/*.java"]),
@@ -6,7 +8,10 @@ android_library(
     custom_package = "com.androidAppModule58",
     visibility = ["//visibility:public"], 
     deps = [
-        "//module46"
+        "//module46",
+        gmaven_artifact("com.android.support:appcompat-v7:aar:26.1.0"),
+        gmaven_artifact("com.android.support.constraint:constraint-layout:aar:1.0.2"),
+        gmaven_artifact("com.android.support:multidex:aar:1.0.1")
     ],
 )
         
