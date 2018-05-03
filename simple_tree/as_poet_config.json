@@ -2,7 +2,7 @@
   "projectName": "simple_tree",
   "root": ".",
   "gradleVersion": "4.7",
-  "androidGradlePluginVersion": "3.1.0",
+  "androidGradlePluginVersion": "3.0.0",
   "kotlinVersion": "1.1.60",
   "numModules": "5",
   "allMethods": "40",
