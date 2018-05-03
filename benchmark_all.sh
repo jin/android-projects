@@ -5,9 +5,11 @@ set -euo pipefail
 projects=$(ls -d */ | grep -v 'third_party')
 
 for project in $projects; do
-  # Make sure gradle is downloaded first
+  # Make sure gradle and Bazel are runnable
   pushd $project
-  ./gradlew
+  echo "Verifying that Gradle and Bazel works in $project.."
+  ./gradlew >/dev/null
+  bazel query //androidAppModule0 >/dev/null
   popd
 done
 
