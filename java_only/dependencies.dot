@@ -1,0 +1,32 @@
+digraph java_only {
+  module0 -> module1, module2, module3;
+  module1 -> module4, module5;
+  module2 -> module6, module7;
+  module3 -> module8, module9;
+  module4 -> module10;
+  module5 -> module11;
+  module6 -> module12;
+  module7 -> module13, module14;
+  module8 -> module15, module16;
+  module9 -> module17;
+  module10 -> module18, module19, module20;
+  module11 -> module21, module22, module23;
+  module12 -> module24, module25, module26, module27, module28, module29;
+  module13;
+  module14;
+  module15;
+  module16;
+  module17;
+  module18;
+  module19;
+  module20;
+  module21;
+  module22;
+  module23;
+  module24;
+  module25;
+  module26;
+  module27;
+  module28;
+  module29;
+}
