@@ -1,0 +1,19 @@
+java_library(
+    name = "module65",
+    srcs = glob(["src/main/java/**/*.java"]),
+    visibility = ["//visibility:public"], 
+    deps = [
+        "//module80",
+        "//module92",
+        "//module71",
+        "//module93",
+        "//module72",
+        "//module96",
+        "//module75",
+        "//module97",
+        "//module78",
+        "//module79",
+        "//module69"
+    ],
+)
+        
