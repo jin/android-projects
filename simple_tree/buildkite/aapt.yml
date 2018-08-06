@@ -1,0 +1,10 @@
+# bazel build //androidAppModule0
+---
+  platforms:
+    macos:
+      shell_commands:
+        - cd simple_tree
+      build_targets:
+        - "//androidAppModule0"
+      build_flags:
+        - "--android_aapt=aapt"
