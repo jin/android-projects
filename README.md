@@ -1,4 +1,4 @@
-# android_projects
+# android-projects
 
 A selection of generated Android projects buildable with Gradle and Bazel,
 inspired by
