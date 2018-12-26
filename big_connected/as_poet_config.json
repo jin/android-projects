@@ -22,5 +22,6 @@
   "dependencies": [
   ],
   "buildTypes": 1,
-  "generateTests": false
+  "generateTests": false,
+  "generateBazelFiles": true
 }
