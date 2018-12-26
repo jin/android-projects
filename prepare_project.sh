@@ -4,7 +4,8 @@
 
 set -euo pipefail
 
-pushd $1; shift
+readonly project_name=$1; shift
+pushd $project_name
 
 echo "Copying benchmarking scripts from third_party..]"
 cp ../third_party/benchmark.sh .
@@ -14,7 +15,11 @@ cp ../third_party/performance.scenarios .
 echo "Scripts copied, please edit performance.scenarios file paths accordingly]"
 
 echo "performing Bazel query..]"
-bazel query 'deps(//androidAppModule0)' --output=graph --noimplicit_deps > bazel_graph.dot
+if [[ $project_name =~ 'java_only' ]]; then
+  bazel query 'deps(//module0)' --output=graph --noimplicit_deps > bazel_graph.dot
+else
+  bazel query 'deps(//androidAppModule0)' --output=graph --noimplicit_deps > bazel_graph.dot
+fi
 
 echo "creating Bazel graph..]"
 dot -v -Tpng bazel_graph.dot -o bazel_graph.png
