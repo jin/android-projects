@@ -1,9 +1,9 @@
 apply plugin: 'com.android.library'
 android {
-    compileSdkVersion 26
+    compileSdkVersion 28
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -31,36 +31,39 @@ android {
 }
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':androidAppModule10')
     implementation project(':androidAppModule11')
+    implementation project(':module4')
+    implementation project(':module15')
+    implementation project(':module7')
+    implementation project(':module2')
+    implementation project(':module11')
+    implementation project(':module8')
+    implementation project(':androidAppModule10')
     implementation project(':androidAppModule13')
-    implementation project(':androidAppModule15')
-    implementation project(':androidAppModule19')
-    implementation project(':androidAppModule20')
-    implementation project(':androidAppModule21')
-    implementation project(':androidAppModule23')
     implementation project(':androidAppModule24')
     implementation project(':androidAppModule27')
+    implementation project(':module20')
+    implementation project(':module6')
+    implementation project(':androidAppModule19')
+    implementation project(':module14')
+    implementation project(':module21')
+    implementation project(':module29')
+    implementation project(':androidAppModule20')
+    implementation project(':androidAppModule15')
+    implementation project(':module0')
+    implementation project(':module12')
     implementation project(':androidAppModule29')
     implementation project(':androidAppModule8')
-    implementation project(':androidAppModule9')
-    implementation project(':module0')
-    implementation project(':module11')
-    implementation project(':module12')
-    implementation project(':module14')
-    implementation project(':module15')
+    implementation project(':androidAppModule21')
     implementation project(':module17')
-    implementation project(':module2')
-    implementation project(':module20')
-    implementation project(':module21')
-    implementation project(':module22')
-    implementation project(':module29')
-    implementation project(':module4')
     implementation project(':module5')
-    implementation project(':module6')
-    implementation project(':module7')
-    implementation project(':module8')
-    implementation "com.android.support:appcompat-v7:26.1.0"
-    implementation "com.android.support.constraint:constraint-layout:1.0.2"
-    implementation "com.android.support:multidex:1.0.1"
+    implementation project(':androidAppModule23')
+    implementation project(':module22')
+    implementation project(':androidAppModule9')
+    implementation "com.android.support:appcompat-v7:28.0.0"
+    implementation "com.android.support.constraint:constraint-layout:1.1.3"
+    testImplementation "junit:junit:4.12"
+    androidTestImplementation "com.android.support.test:runner:1.0.2"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:3.0.2"
+    implementation "com.android.support:multidex:1.0.3"
 }

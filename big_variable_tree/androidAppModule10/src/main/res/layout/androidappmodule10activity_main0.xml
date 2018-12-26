@@ -8,12 +8,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
             <TextView
+        android:id="@+id/androidappmodule10activity_main0androidAppModule10string00"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/androidAppModule10string0"
         
 />
             <ImageView
+        android:id="@+id/androidappmodule10activity_main0androidappmodule10image00"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/androidappmodule10image0"
@@ -21,17 +23,17 @@
 />
             
             <include
-        layout="@layout/androidappmodule20activity_main9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-/>
-            <include
         layout="@layout/androidappmodule19activity_main9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 />
             <include
         layout="@layout/androidappmodule18activity_main9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+/>
+            <include
+        layout="@layout/androidappmodule20activity_main9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 />

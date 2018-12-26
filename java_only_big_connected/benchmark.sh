@@ -11,13 +11,11 @@ if ! [ -x "$(command -v bazel)" ]; then
   exit 1
 fi
 
-version=$1; shift;
-
-targets="cleanWithColdLocalCacheWithDaemon"
+targets="cleanWithColdLocalCache cleanWithColdLocalCacheWithDaemon abiChangeWithLeafLocalCache abiChangeWithRootLocalCache nonAbiChangeWithLeafLocalCache nonAbiChangeWithRootLocalCache androidManifestChangeWithLeafLocalCache androidManifestChangeWithRootLocalCache androidResourceChangeWithLeafLocalCache androidResourceChangeWithRootLocalCache"
 timestampDir=$(date +"%Y%m%d_%H%M%S")
-outputDir=output/$timestampDir-$version
-iterations=5
-warmups=2
+outputDir=output/$timestampDir
+iterations=10
+warmups=6
 
 echo "Exporting benchmark data to $outputDir"
 
@@ -25,5 +23,5 @@ echo "Snapshotting performance.scenarios to $outputDir"
 mkdir -p $outputDir/
 cp performance.scenarios $outputDir/
 
-# ./gradle-profiler --benchmark $targets --iterations=$iterations --warmups=$warmups --output-dir=$outputDir/gradle
+./gradle-profiler --benchmark $targets --iterations=$iterations --warmups=$warmups --output-dir=$outputDir/gradle
 ./gradle-profiler --benchmark --bazel $targets --iterations=$iterations --warmups=$warmups --output-dir=$outputDir/bazel

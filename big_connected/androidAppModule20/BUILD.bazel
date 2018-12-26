@@ -2,28 +2,29 @@ load("@gmaven_rules//:defs.bzl", "gmaven_artifact")
 
 android_library(
     name = "androidAppModule20",
-    srcs = glob(["src/main/java/**/*.java"]), 
+    srcs = glob(["src/main/java/**/*.java"]),
     resource_files = glob(["src/main/res/**/*"]),
     manifest = "src/main/AndroidManifest.xml",
     custom_package = "com.androidAppModule20",
-    visibility = ["//visibility:public"], 
+    visibility = ["//visibility:public"],
     deps = [
-        "//androidAppModule23",
+        "//module10",
+        "//module1",
         "//androidAppModule26",
         "//androidAppModule28",
-        "//module1",
-        "//module10",
         "//module12",
-        "//module13",
         "//module20",
-        "//module24",
-        "//module27",
-        "//module5",
+        "//androidAppModule23",
         "//module6",
+        "//module5",
+        "//module13",
+        "//module27",
+        "//module24",
         "//module9",
-        gmaven_artifact("com.android.support:appcompat-v7:aar:26.1.0"),
-        gmaven_artifact("com.android.support.constraint:constraint-layout:aar:1.0.2"),
-        gmaven_artifact("com.android.support:multidex:aar:1.0.1")
+        gmaven_artifact("com.android.support:appcompat-v7:aar:28.0.0"),
+        gmaven_artifact("com.android.support.constraint:constraint-layout:aar:1.1.3"),
+        gmaven_artifact("com.android.support:multidex:aar:1.0.3"),
+        gmaven_artifact("com.android.support.test:runner:aar:1.0.2"),
+        gmaven_artifact("com.android.support.test.espresso:espresso-core:aar:3.0.2")
     ],
 )
-        
