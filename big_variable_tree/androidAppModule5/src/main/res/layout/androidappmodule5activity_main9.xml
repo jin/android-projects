@@ -8,63 +8,74 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
             <TextView
+        android:id="@+id/androidappmodule5activity_main9androidAppModule5string90"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/androidAppModule5string9"
         
 /><TextView
+        android:id="@+id/androidappmodule5activity_main9androidAppModule5string101"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/androidAppModule5string10"
         
 /><TextView
+        android:id="@+id/androidappmodule5activity_main9androidAppModule5string112"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/androidAppModule5string11"
         
 /><TextView
+        android:id="@+id/androidappmodule5activity_main9androidAppModule11string113"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/androidAppModule11string11"
         
 />
             <ImageView
+        android:id="@+id/androidappmodule5activity_main9androidappmodule5image90"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/androidappmodule5image9"
         
 />
             <ImageView
+        android:id="@+id/androidappmodule5activity_main9androidappmodule5image101"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/androidappmodule5image10"
         
 />
             <ImageView
+        android:id="@+id/androidappmodule5activity_main9androidappmodule5image112"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/androidappmodule5image11"
         
 />
             <ImageView
+        android:id="@+id/androidappmodule5activity_main9androidappmodule5image123"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/androidappmodule5image12"
         
 />
             <ImageView
+        android:id="@+id/androidappmodule5activity_main9androidappmodule5image134"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/androidappmodule5image13"
         
 />
             <ImageView
+        android:id="@+id/androidappmodule5activity_main9androidappmodule5image145"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/androidappmodule5image14"
         
 />
             <ImageView
+        android:id="@+id/androidappmodule5activity_main9androidappmodule11image146"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/androidappmodule11image14"

@@ -8,12 +8,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
             <TextView
+        android:id="@+id/androidappmodule11activity_main0androidAppModule11string00"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/androidAppModule11string0"
         
 />
             <ImageView
+        android:id="@+id/androidappmodule11activity_main0androidappmodule11image00"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/androidappmodule11image0"
@@ -21,7 +23,7 @@
 />
             
             <include
-        layout="@layout/androidappmodule26activity_main9"
+        layout="@layout/androidappmodule14activity_main9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 />
@@ -31,12 +33,17 @@
         android:layout_height="wrap_content"
 />
             <include
-        layout="@layout/androidappmodule24activity_main9"
+        layout="@layout/androidappmodule26activity_main9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 />
             <include
-        layout="@layout/androidappmodule23activity_main9"
+        layout="@layout/androidappmodule13activity_main9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+/>
+            <include
+        layout="@layout/androidappmodule24activity_main9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 />
@@ -51,17 +58,12 @@
         android:layout_height="wrap_content"
 />
             <include
-        layout="@layout/androidappmodule14activity_main9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-/>
-            <include
-        layout="@layout/androidappmodule13activity_main9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-/>
-            <include
         layout="@layout/androidappmodule12activity_main9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+/>
+            <include
+        layout="@layout/androidappmodule23activity_main9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 />

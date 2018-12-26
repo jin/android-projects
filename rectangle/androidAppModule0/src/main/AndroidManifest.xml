@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="26" /><application>
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="28" /><application>
          <activity android:name=".Activity0">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
